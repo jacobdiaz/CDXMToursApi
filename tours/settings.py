@@ -65,6 +65,7 @@ CSRF_COOKIE_SECURE = True
 CORS_ALLOWED_ORIGINS = [
     'https://shrouded-harbor-20232-4ba7010f3a51.herokuapp.com'
 ]
+CSRF_TRUSTED_ORIGINS=['https://shrouded-harbor-20232-4ba7010f3a51.herokuapp.com']
 
 ROOT_URLCONF = 'tours.urls'
 
