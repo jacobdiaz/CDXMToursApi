@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tours'
+    'tours',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,10 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_COOKIE_SECURE = True
+
+CORS_ALLOWED_ORIGINS = [
+    'https://shrouded-harbor-20232-4ba7010f3a51.herokuapp.com'
+]
 
 ROOT_URLCONF = 'tours.urls'
 
