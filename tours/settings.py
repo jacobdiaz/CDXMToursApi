@@ -98,6 +98,12 @@ DATABASES = {
     }
 }
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = os.getenv('ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.getenv('SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.getenv('STORAGE_BUCKET_NAME')
+AWS_QUERYSTRING_AUTH = os.getenv('QUERYSTRING_AUTH')
+S3_FILE_OVERWRITE = True
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
